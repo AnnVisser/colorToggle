@@ -1,0 +1,105 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	display: flexbox;
+	align-items: center;
+	justify-content: center;
+	#title {
+		font-size: 46px;
+		width: 300px;
+		height: 300px;
+		margin-left: 40%;
+		text-align: center;
+	}
+}
+
+// MENU stuff
+.navbar {
+	display: flexbox;
+	font-size: 24px;
+	#menuBtn {
+		width: 100px;
+		height: 100px;
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		#menuOptions {
+			width: 250px;
+			ul {
+				display: flexbox;
+				width: 250px;
+				list-style: none;
+				padding-left: 0px;
+				li {
+					border: 2px solid black;
+					text-align: center;
+					color: white;
+					#white {
+						background-color: white;
+						color: black;
+					}
+
+					#red {
+						background-color: red;
+					}
+					#orange {
+						background-color: orange;
+					}
+					#yellow {
+						background-color: yellow;
+						color: black;
+					}
+					#green {
+						background-color: green;
+					}
+					#blue {
+						background-color: blue;
+					}
+					#purple {
+						background-color: purple;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Classes for JS stuff
+
+.hidden {
+	content-visibility: hidden;
+}
+
+.r-home {
+	background-color: white;
+}
+
+.r-red {
+	background-color: red;
+}
+
+.r-orange {
+	background-color: orange;
+}
+
+.r-yellow {
+	background-color: yellow;
+}
+
+.r-green {
+	background-color: green;
+}
+
+.r-blue {
+	background-color: blue;
+}
+
+.r-purple {
+	background-color: purple;
+}

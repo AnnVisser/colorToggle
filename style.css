@@ -1,0 +1,101 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+body #title {
+  font-size: 46px;
+  width: 300px;
+  height: 300px;
+  margin-left: 40%;
+  text-align: center;
+}
+
+.navbar {
+  display: flexbox;
+  font-size: 24px;
+}
+.navbar #menuBtn {
+  width: 100px;
+  height: 100px;
+}
+.navbar #menuBtn img {
+  width: 100px;
+  height: 100px;
+}
+.navbar #menuBtn #menuOptions {
+  width: 250px;
+}
+.navbar #menuBtn #menuOptions ul {
+  display: flexbox;
+  width: 250px;
+  list-style: none;
+  padding-left: 0px;
+}
+.navbar #menuBtn #menuOptions ul li {
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+}
+.navbar #menuBtn #menuOptions ul li #white {
+  background-color: white;
+  color: black;
+}
+.navbar #menuBtn #menuOptions ul li #red {
+  background-color: red;
+}
+.navbar #menuBtn #menuOptions ul li #orange {
+  background-color: orange;
+}
+.navbar #menuBtn #menuOptions ul li #yellow {
+  background-color: yellow;
+  color: black;
+}
+.navbar #menuBtn #menuOptions ul li #green {
+  background-color: green;
+}
+.navbar #menuBtn #menuOptions ul li #blue {
+  background-color: blue;
+}
+.navbar #menuBtn #menuOptions ul li #purple {
+  background-color: purple;
+}
+
+.hidden {
+  content-visibility: hidden;
+}
+
+.r-home {
+  background-color: white;
+}
+
+.r-red {
+  background-color: red;
+}
+
+.r-orange {
+  background-color: orange;
+}
+
+.r-yellow {
+  background-color: yellow;
+}
+
+.r-green {
+  background-color: green;
+}
+
+.r-blue {
+  background-color: blue;
+}
+
+.r-purple {
+  background-color: purple;
+}/*# sourceMappingURL=style.css.map */
