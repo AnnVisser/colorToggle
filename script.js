@@ -1,3 +1,5 @@
+const hide = document.querySelector("#menuOptions");
+const toggle = document.querySelector("#menuBtn");
 const home = document.querySelector("#r-home");
 const red = document.querySelector("#r-red");
 const orange = document.querySelector("#r-orange");
@@ -8,8 +10,6 @@ const purple = document.querySelector("#r-purple");
 const allWeb = document.getElementById("allWeb");
 
 // Visibility of the menu
-const hide = document.querySelector("#menuOptions");
-const toggle = document.querySelector("#menuBtn");
 
 const showMenu = function () {
 	hide.classList.remove("hidden");
@@ -18,21 +18,39 @@ const hideMenu = function () {
 	hide.classList.add("hidden");
 };
 
+toggle.addEventListener("mouseover", showMenu);
+toggle.addEventListener("mouseout", hideMenu);
+home.addEventListener("change", hideMenu);
+red.addEventListener("change", hideMenu);
+orange.addEventListener("change", hideMenu);
+yellow.addEventListener("change", hideMenu);
+green.addEventListener("change", hideMenu);
+blue.addEventListener("change", hideMenu);
+purple.addEventListener("change", hideMenu);
+
 //  Changing the background of the website
+
 const changeColor = function (e) {
 	allWeb.removeAttribute("class");
 	allWeb.classList.add(e.target.id);
+	document.getElementById("title").innerHTML = e.target.parentElement.id;
 };
 
-const changeTitle = function (t) {
-	document.getElementById("title").innerHTML = t.target.parentElement.id;
-};
+home.addEventListener("change", changeColor);
+red.addEventListener("change", changeColor);
+orange.addEventListener("change", changeColor);
+yellow.addEventListener("change", changeColor);
+green.addEventListener("change", changeColor);
+blue.addEventListener("change", changeColor);
+purple.addEventListener("change", changeColor);
+
+//Functions and events to allow keyboard control
 
 const keyboard = function (value) {
 	if (value.code === "Digit1") {
 		allWeb.removeAttribute("class");
 		allWeb.classList.add("r-home");
-		document.getElementById("title").innerHTML = "home";
+		document.getElementById("title").innerHTML = "white";
 	} else if (value.code === "Digit2") {
 		allWeb.removeAttribute("class");
 		allWeb.classList.add("r-red");
@@ -60,29 +78,4 @@ const keyboard = function (value) {
 	}
 };
 
-// Events
-
 window.addEventListener("keypress", keyboard);
-toggle.addEventListener("mouseover", showMenu);
-toggle.addEventListener("mouseout", hideMenu);
-home.addEventListener("change", changeColor);
-home.addEventListener("change", hideMenu);
-home.addEventListener("change", changeTitle);
-red.addEventListener("change", changeColor);
-red.addEventListener("change", hideMenu);
-red.addEventListener("change", changeTitle);
-orange.addEventListener("change", changeColor);
-orange.addEventListener("change", hideMenu);
-orange.addEventListener("change", changeTitle);
-yellow.addEventListener("change", changeColor);
-yellow.addEventListener("change", hideMenu);
-yellow.addEventListener("change", changeTitle);
-green.addEventListener("change", changeColor);
-green.addEventListener("change", hideMenu);
-green.addEventListener("change", changeTitle);
-blue.addEventListener("change", changeColor);
-blue.addEventListener("change", hideMenu);
-blue.addEventListener("change", changeTitle);
-purple.addEventListener("change", changeColor);
-purple.addEventListener("change", hideMenu);
-purple.addEventListener("change", changeTitle);
