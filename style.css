@@ -10,7 +10,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-body #title {
+
+#title {
   font-size: 46px;
   width: 300px;
   height: 300px;
@@ -22,49 +23,61 @@ body #title {
   display: flexbox;
   font-size: 24px;
 }
-.navbar #menuBtn {
+
+#menuBtn {
   width: 100px;
   height: 100px;
 }
-.navbar #menuBtn img {
+
+img {
   width: 100px;
   height: 100px;
 }
-.navbar #menuBtn #menuOptions {
+
+#menuOptions {
   width: 250px;
 }
-.navbar #menuBtn #menuOptions ul {
+
+ul {
   display: flexbox;
   width: 250px;
   list-style: none;
   padding-left: 0px;
 }
-.navbar #menuBtn #menuOptions ul li {
+
+li {
   border: 2px solid black;
   text-align: center;
   color: white;
 }
-.navbar #menuBtn #menuOptions ul li #white {
+
+#white {
   background-color: white;
   color: black;
 }
-.navbar #menuBtn #menuOptions ul li #red {
+
+#red {
   background-color: red;
 }
-.navbar #menuBtn #menuOptions ul li #orange {
+
+#orange {
   background-color: orange;
 }
-.navbar #menuBtn #menuOptions ul li #yellow {
+
+#yellow {
   background-color: yellow;
   color: black;
 }
-.navbar #menuBtn #menuOptions ul li #green {
+
+#green {
   background-color: green;
 }
-.navbar #menuBtn #menuOptions ul li #blue {
+
+#blue {
   background-color: blue;
 }
-.navbar #menuBtn #menuOptions ul li #purple {
+
+#purple {
   background-color: purple;
 }
 

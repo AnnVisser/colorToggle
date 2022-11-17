@@ -9,65 +9,70 @@ body {
 	display: flexbox;
 	align-items: center;
 	justify-content: center;
-	#title {
-		font-size: 46px;
-		width: 300px;
-		height: 300px;
-		margin-left: 40%;
-		text-align: center;
-	}
+}
+#title {
+	font-size: 46px;
+	width: 300px;
+	height: 300px;
+	margin-left: 40%;
+	text-align: center;
 }
 
 // MENU stuff
 .navbar {
 	display: flexbox;
 	font-size: 24px;
-	#menuBtn {
-		width: 100px;
-		height: 100px;
-		img {
-			width: 100px;
-			height: 100px;
-		}
-		#menuOptions {
-			width: 250px;
-			ul {
-				display: flexbox;
-				width: 250px;
-				list-style: none;
-				padding-left: 0px;
-				li {
-					border: 2px solid black;
-					text-align: center;
-					color: white;
-					#white {
-						background-color: white;
-						color: black;
-					}
+}
+#menuBtn {
+	width: 100px;
+	height: 100px;
+}
 
-					#red {
-						background-color: red;
-					}
-					#orange {
-						background-color: orange;
-					}
-					#yellow {
-						background-color: yellow;
-						color: black;
-					}
-					#green {
-						background-color: green;
-					}
-					#blue {
-						background-color: blue;
-					}
-					#purple {
-						background-color: purple;
-					}
-				}
-			}
-		}
-	}
+img {
+	width: 100px;
+	height: 100px;
+}
+
+#menuOptions {
+	width: 250px;
+}
+
+ul {
+	display: flexbox;
+	width: 250px;
+	list-style: none;
+	padding-left: 0px;
+}
+
+li {
+	border: 2px solid black;
+	text-align: center;
+	color: white;
+}
+
+#white {
+	background-color: white;
+	color: black;
+}
+
+#red {
+	background-color: red;
+}
+#orange {
+	background-color: orange;
+}
+#yellow {
+	background-color: yellow;
+	color: black;
+}
+#green {
+	background-color: green;
+}
+#blue {
+	background-color: blue;
+}
+#purple {
+	background-color: purple;
 }
 
 //Classes for JS stuff

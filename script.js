@@ -1,5 +1,3 @@
-const hide = document.querySelector("#menuOptions");
-const toggle = document.querySelector("#menuBtn");
 const home = document.querySelector("#r-home");
 const red = document.querySelector("#r-red");
 const orange = document.querySelector("#r-orange");
@@ -9,7 +7,10 @@ const blue = document.querySelector("#r-blue");
 const purple = document.querySelector("#r-purple");
 const allWeb = document.getElementById("allWeb");
 
-// functions
+// Visibility of the menu
+const hide = document.querySelector("#menuOptions");
+const toggle = document.querySelector("#menuBtn");
+
 const showMenu = function () {
 	hide.classList.remove("hidden");
 };
@@ -17,6 +18,7 @@ const hideMenu = function () {
 	hide.classList.add("hidden");
 };
 
+//  Changing the background of the website
 const changeColor = function (e) {
 	allWeb.removeAttribute("class");
 	allWeb.classList.add(e.target.id);
