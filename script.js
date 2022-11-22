@@ -20,13 +20,6 @@ const hideMenu = function () {
 
 toggle.addEventListener("mouseover", showMenu);
 toggle.addEventListener("mouseout", hideMenu);
-home.addEventListener("change", hideMenu);
-red.addEventListener("change", hideMenu);
-orange.addEventListener("change", hideMenu);
-yellow.addEventListener("change", hideMenu);
-green.addEventListener("change", hideMenu);
-blue.addEventListener("change", hideMenu);
-purple.addEventListener("change", hideMenu);
 
 //  Changing the background of the website
 
@@ -34,6 +27,7 @@ const changeColor = function (e) {
 	allWeb.removeAttribute("class");
 	allWeb.classList.add(e.target.id);
 	document.getElementById("title").innerHTML = e.target.parentElement.id;
+	addEventListener("change", hideMenu);
 };
 
 home.addEventListener("change", changeColor);
